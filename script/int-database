@@ -1,0 +1,33 @@
+/*
+==========================================================================
+  create database and schema
+==========================================================================
+
+script purpose :
+	created a database warehouse
+	when run it will create schema
+	it consist of 3 schema bronze,silver,gold
+-----------------------------------------------------------------------------
+	in future want to add if exist drop in script
+-----------------------------------------------------------------------------
+*/
+
+use master ;
+
+
+-- create data warehouse database
+ create database datawarehouse;
+
+ use datawarehouse;
+
+-- create schema layer
+
+create schema bronze;
+go
+
+create schema silver;
+go
+
+create schema gold;
+go
+
